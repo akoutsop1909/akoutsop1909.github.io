@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Πέτρα - Ψαλίδι - Χαρτί | akoutsop1909</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="../js/rock-paper-scissors.js"></script>
+		<style type="text/css">
+			.status {
+				font-size: 22px;
+				font-weight: bold;
+				text-align: center;
+				color: #e59400;
+			}
+
+			.status2 {
+				font-size: 24px;
+				font-weight: bold;
+				text-align: center;
+				min-height: 24px;
+				color: blue;
+				visibility: hidden;
+			}
+
+			.score {
+				font-size: 14px;
+				font-weight: bold;
+				color: #5F5F5F;
+			}
+
+			#choices img {
+				height: 150px;
+				width: 150px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: none;  
+			}
+
+			#items { 
+				margin: auto;
+				text-align:center;
+			} 
+
+			#items img { 
+				border: 3px solid white; 
+			} 
+	
+			#items img:hover { 
+				border: 3px ridge orange; 
+				cursor: pointer;
+			} 
+		</style
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">JavaScript MiniGames</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/akoutsop1909" target="_blank">akoutsop1909@github</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="the-king.html">Find the king</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="rock-paper-scissors.html">Rock-Paper-Scissors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="traffic-lights-easy.html">Traffic Lights (Easy)</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="traffic-lights-hard.html">Traffic Lights (Hard)</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="virtual.html">Virtual Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Πετρα - Ψαλιδι - Χαρτι</h3>
+							<div class="subheading mb-3"></div>
+                            <p>Images downloaded from <a href="http://clipart-library.com/" target="_blank">Clipart Library</a></p>
+							<div>Το κλασσικό παιχνίδι πέτρα, ψαλίδι, χαρτί με αντίπαλο τον υπολογιστή.</div>
+							<div>Διάλεξε "πέτρα", "ψαλίδι" ή "χαρτί" κάνοντας κλικ πάνω στην αντίστοιχη εικόνα.</div>
+							<div class="status">Υπολογιστής</div>
+							<div id="choices">
+								<img id="pc_choice" src="../assets/img/blank.jpg"/>
+								<div class="status2" id="div_status">blank</div>
+								<img id="player_choice" src="../assets/img/blank.jpg"/>
+							</div>
+							<div class="status">Παίκτης</div>
+							<div id="items">
+								<img id="rock" src="../assets/img/rock.jpg" onclick="Play(1)"/>
+								<img id="scissors" src="../assets/img/scissors.jpg" onclick="Play(2)"/>
+								<img id="paper" src="../assets/img/paper.jpg" onclick="Play(3)"/>
+							</div>
+							<div class="score" id="result">Νίκες: 0. Ήττες: 0. Ισοπαλίες: 0.</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
