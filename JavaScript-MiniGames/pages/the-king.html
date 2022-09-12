@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Εδώ παππάς εκεί παππάς | akoutsop1909</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="../js/the-king.js"></script>
+		<style type="text/css">
+			.status {
+				position: relative;
+				font-size: 22px;
+				font-weight: bold;
+				min-height: 22px;
+				color: #e59400;
+				text-align: center;
+				visibility: hidden;
+			}
+
+			.score {
+				font-size: 14px;
+				font-weight: bold;
+				color: #5F5F5F;
+			}
+			
+			#cards { 
+				margin: auto;
+				text-align:center;
+			}
+
+			#cards img { 
+				border: 3px solid white; 
+			} 
+	
+			#cards img:hover { 
+				border: 3px ridge orange; 
+				cursor: pointer;
+			} 
+		</style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">JavaScript MiniGames</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://github.com/akoutsop1909" target="_blank">akoutsop1909@github</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="the-king.html">Find the king</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="rock-paper-scissors.html">Rock-Paper-Scissors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="traffic-lights-easy.html">Traffic Lights (Easy)</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="traffic-lights-hard.html">Traffic Lights (Hard)</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="virtual.html">Virtual Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Εδω παππας, εκει παππας</h3>
+							<div class="subheading mb-3"></div>
+                            <p>Images downloaded from <a href="http://clipart-library.com/" target="_blank">Clipart Library</a></p>
+							<div>Ο παππάς έχει ήδη κρυφτεί πίσω από ένα φύλλο. Μπορείς να μαντέψεις ποιο είναι αυτό;</div>
+							<div>Πάτα πάνω σε ένα φύλλο για να δεις αν τον βρήκες.</div>
+							<div>Όταν τα φύλλα γυρίσουν και πάλι ανάποδα, το παιχνίδι ξεκινά ξανά.</div>
+							</br>
+							<div class="status" id = "div_status">blank</div>
+							</br>
+							<div id="cards">
+								<img id="card1" width="184" height="274" src="../assets/img/card_down.jpg" onclick="findKing(1)"/>
+								<img id="card2" width="184" height="274" src="../assets/img/card_down.jpg" onclick="findKing(2)"/>
+								<img id="card3" width="184" height="274" src="../assets/img/card_down.jpg" onclick="findKing(3)"/>
+							</div>
+							<div class="score" id="result">Αριθμός επιτυχιών: 0. Αριθμός αποτυχιών: 0.</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>
